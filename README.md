@@ -7,7 +7,7 @@ This repository contains the initial exercises that are going to be covered in t
 The practical part of the subject is going to be taught in [Julia](https://julialang.org/) which is a common language in the research of Machine Learning. This exercise has been tested with version 1.7, however previous version should alsowork.
 
 
-#Teaching Staff:
+# Teaching Staff:
 * Daniel Rivero Cebrian (responsable, UDC)
 * Victor M. Darriba Bilbao (UVigo)
 * Enrique Fernández Blanco (UDC)
