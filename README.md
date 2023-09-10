@@ -21,6 +21,7 @@ The practical part of the subject is going to be taught in [Julia](https://julia
 There is a docker prepared with the libraries and the system alredy setup. To run it, you would need docker setup. It is based on the image create by the Jupyter development team. It contains the following:
 * Jupyter Lab = 4.0.5
 * Julia = 1.9.3
+
 | Resource    | Version |
 |-------------|:---------:|
 | CSV          | 0.10.11 |
@@ -39,7 +40,9 @@ There is a docker prepared with the libraries and the system alredy setup. To ru
 | Tables      | 1.10.1  |
 | XLSX        | 0.10.0  |
 | Statistics  | 1.9.0   |
+
 * Python = 3.11.2
+
 | Resource    | Version |
 |-------------|:---------:|
 | IPyKernel   | 6.25.1  |
