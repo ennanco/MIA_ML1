@@ -12,7 +12,6 @@ The practical part of the subject is going to be taught in [Julia](https://julia
 * Daniel Rivero Cebrián (responsable, UDC)
 * Víctor M. Darriba Bilbao (UVigo)
 * Enrique Fernández Blanco (UDC)
-* Lara M. Vázquez González (USC)
 * Nelly Condori Fernández (USC)
 
 
