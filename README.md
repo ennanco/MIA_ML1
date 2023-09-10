@@ -20,29 +20,37 @@ The practical part of the subject is going to be taught in [Julia](https://julia
 # Docker version
 
 There is a docker prepared with the libraries and the system alredy setup. To run it, you would need docker setup. It is based on the image create by the Jupyter development team. It contains the following:
-* Jupyter Lab
-* Julia
-    * IJulia
-    * \"FileIO\", \
-    * \"XLSX\", \
-    * JLD2
-    * DelimitedFiles
-    * CSV
-    * Flux
-    * ScikitLearn
-    * Plots
-    * MAT
-    * Tables
-    * Images
-    * DataFrames
-    * Statistics
-    * StatsPlots
-* Pluto.jl
-* Python
-    * Matplotly
-    * Plotly
-    * rich
-    * seaborn
+* Jupyter Lab = 4.0.5
+* Julia = 1.9.3
+| Resource    | Version |
+|-------------|:---------:|
+| CSV          | 0.10.11 |
+| DataFrames  | 1.6.1   |
+| DelimitedFiles | 1.9.1 |
+| FileIO      | 1.16.1  |
+| Flux        | 0.14.5  |
+| IJulia      | 1.24.2  |
+| Images      | 0.26.0  |
+| JLD2        | 0.4.33  |
+| MAT         | 0.10.5  |
+| Plots       | 1.39.0  |
+| Pluto       | 0.19.27 |
+| ScikitLearn | 0.7.0   |
+| StatsPlots  | 0.15.6  |
+| Tables      | 1.10.1  |
+| XLSX        | 0.10.0  |
+| Statistics  | 1.9.0   |
+* Python = 3.11.2
+| Resource    | Version |
+|-------------|:---------:|
+| IPyKernel   | 6.25.1  |
+| jupyter-pluto-proxy| 0.1.2 |
+| Matplotlib  | 3.7.2   |
+| Numpy       | 1.25.2  |
+| Pandas      | 2.1.0   |
+| Plotly      | 5.16.1  |
+| rich        | 13.5.2  |
+| seaborn     | 0.12.2  |
 
 
 There are two posibilities:
