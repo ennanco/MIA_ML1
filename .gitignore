@@ -2,6 +2,11 @@
 *.all_data
 *.tgz
 
+# Non syncrhonized folders
+
+no-sync/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
