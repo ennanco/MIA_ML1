@@ -5,15 +5,15 @@
 
 This repository contains the initial exercises that are going to be covered in the subject Machine Learning I of the Master in Artificial Intelligence taught at the three universities of Galicia, i.e., University of A Coruña (UDC), University of Santiago de Compostela (USC), University of Vigo (UVigo).
 
+This notebooks are inspired on the initial development of Daniel Rivero Cebrián, former teacher of the subject, who has lend the material for the development of the current status.
+
 The practical part of the subject is going to be taught in [Julia](https://julialang.org/) which is a common language in the research with Machine Learning. These exercises have been tested with version 1.7.2, however, the previous version should also work since version 1.2.0.
 
 
 # Teaching Staff:
-* Daniel Rivero Cebrián (responsable, UDC)
+* Enrique Fernández Blanco (responsable, UDC)
 * Víctor M. Darriba Bilbao (UVigo)
-* Enrique Fernández Blanco (UDC)
 * Nelly Condori Fernández (USC)
-
 
 
 # Docker version
