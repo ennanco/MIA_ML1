@@ -66,7 +66,7 @@ There are two ways to set up the Docker environment:
 If you have cloned the repository, build the Docker image using the following command:
 
 ```bash
-    docker built -t ennanco/machinelearning1 docker/
+docker built -t ennanco/machinelearning1 docker/
 
 ```
 
@@ -76,7 +76,7 @@ This build process takes approximately 15 minutes.
 Alternatively, you can download the pre-built image from Docker Hub:
 
 ```bash
-    docker pull ennanco/machinelearning1
+docker pull ennanco/machinelearning1
 
 ```
 
@@ -85,7 +85,7 @@ The download size is around 2 GB, so the time required will depend on your inter
 ## Running the Environment
 To start the Docker environment, navigate to the cloned folder and run:
 ```bash
-    docker run -p 8888:8888 -v ${PWD}/.:/home/jovyan/work ennanco/machinelearning1
+docker run -p 8888:8888 -v ${PWD}/.:/home/jovyan/work ennanco/machinelearning1
 
 ```
 This command will open a Jupyter Lab environment in your browser, pre-configured with all necessary libraries for the subject.
