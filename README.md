@@ -1,83 +1,93 @@
 
 ![GitHub](https://img.shields.io/github/license/ennanco/MIA_ML1?style=flat-square) ![Julia](https://img.shields.io/badge/Julia-1.7.2-blueviolet?logo=Julia)
 
+# Machine Learning I
+
 ![Banner](img/MLI.png)
 
-This repository contains the initial exercises that are going to be covered in the subject Machine Learning I of the Master in Artificial Intelligence taught at the three universities of Galicia, i.e., University of A Coruña (UDC), University of Santiago de Compostela (USC), University of Vigo (UVigo).
+This repository hosts the initial exercises for the subject **Machine Learning I** in the Master in Artificial Intelligence, which is jointly offered by the three Galician universities: the University of A Coruña (UDC), the University of Santiago de Compostela (USC), and the University of Vigo (UVigo).
 
-This notebooks are inspired on the initial development of Daniel Rivero Cebrián, former teacher of the subject, who has lend the material for the development of the current status.
+The notebooks in this repository are based on the initial work of Daniel Rivero Cebrián, a former instructor of the subject, who generously provided materials to support the current development.
 
-The practical part of the subject is going to be taught in [Julia](https://julialang.org/) which is a common language in the research with Machine Learning. These exercises have been tested with version 1.7.2, however, the previous version should also work since version 1.2.0.
+The practical sessions will be conducted using [Julia](https://julialang.org/), a widely used language in machine learning research. These exercises have been tested on Julia version 1.7.2, though they should also be compatible with versions starting from 1.2.0.
 
 
 # Teaching Staff:
-* Enrique Fernández Blanco (responsable, UDC)
-* Víctor M. Darriba Bilbao (UVigo)
-* Nelly Condori Fernández (USC)
+* **Enrique Fernández Blanco** (Course Coordinator, UDC)
+* **Víctor M. Darriba Bilbao** (UVigo)
+* **Nelly Condori Fernández** (USC)
 
 
-# Docker version
+# Docker Environment
 
-There is a docker prepared with the libraries and the system alredy setup. To run it, you would need docker setup. It is based on the image create by the Jupyter development team. It contains the following:
-* Jupyter Lab = 4.0.5
-* Julia = 1.9.3
+A Docker image has been prepared with all necessary libraries and configurations. It’s based on the Jupyter Docker image and includes:
 
-| Resource    | Version |
-|-------------|:---------:|
-| CSV          | 0.10.11 |
-| DataFrames  | 1.6.1   |
-| DelimitedFiles | 1.9.1 |
-| FileIO      | 1.16.1  |
-| Flux        | 0.14.5  |
-| IJulia      | 1.24.2  |
-| Images      | 0.26.0  |
-| JLD2        | 0.4.33  |
-| MAT         | 0.10.5  |
-| Plots       | 1.39.0  |
-| Pluto       | 0.19.27 |
-| ScikitLearn | 0.7.0   |
-| StatsPlots  | 0.15.6  |
-| Tables      | 1.10.1  |
-| XLSX        | 0.10.0  |
-| Statistics  | 1.9.0   |
+- **Jupyter Lab** = 4.0.5
+- **Julia** = 1.9.3
 
-* Python = 3.11.2
+| Julia Library      | Version |
+|--------------------|:-------:|
+| CSV                | 0.10.11 |
+| DataFrames         | 1.6.1   |
+| DelimitedFiles     | 1.9.1   |
+| FileIO             | 1.16.1  |
+| Flux               | 0.14.5  |
+| IJulia             | 1.24.2  |
+| Images             | 0.26.0  |
+| JLD2               | 0.4.33  |
+| MAT                | 0.10.5  |
+| Plots              | 1.39.0  |
+| Pluto              | 0.19.27 |
+| ScikitLearn        | 0.7.0   |
+| StatsPlots         | 0.15.6  |
+| Tables             | 1.10.1  |
+| XLSX               | 0.10.0  |
+| Statistics         | 1.9.0   |
 
-| Resource    | Version |
-|-------------|:---------:|
-| IPyKernel   | 6.25.1  |
-| jupyter-pluto-proxy| 0.1.2 |
-| Matplotlib  | 3.7.2   |
-| Numpy       | 1.25.2  |
-| Pandas      | 2.1.0   |
-| Plotly      | 5.16.1  |
-| rich        | 13.5.2  |
-| seaborn     | 0.12.2  |
+- **Python** = 3.11.2
+
+| Python Library     | Version |
+|--------------------|:-------:|
+| IPyKernel          | 6.25.1  |
+| jupyter-pluto-proxy| 0.1.2   |
+| Matplotlib         | 3.7.2   |
+| Numpy              | 1.25.2  |
+| Pandas             | 2.1.0   |
+| Plotly             | 5.16.1  |
+| rich               | 13.5.2  |
+| seaborn            | 0.12.2  |
 
 
-There are two posibilities:
+## Docker Setup Options
 
-## Build from scratch
-Execute the building process from the Dockerfile in docker, if you have clone the repository:
+There are two ways to set up the Docker environment:
 
-> docker built -t ennanco/machinelearning1 docker/.
+### 1. Build from Scratch
+If you have cloned the repository, build the Docker image using the following command:
 
-This command would take about 15 minutes to execute and create the image.
+```bash
+    docker built -t ennanco/machinelearning1 docker/
 
-## Pull from Docker Hub repository
-Execute the following command:
+```
 
->docker pull ennanco/machinelearning1
+This build process takes approximately 15 minutes.
 
-In this case, the download size is about 2GBytes, so it is going to be quite dependant on your connection.
+## Pull from Docker Hub
+Alternatively, you can download the pre-built image from Docker Hub:
 
-## Run the practice environment
+```bash
+    docker pull ennanco/machinelearning1
 
-To run the docker environment, you should execute the following command in the cloned folder:
+```
 
->  docker run -p 8888:8888 -v ${PWD}/.:/home/jovyan/work ennanco/machinelearning1
+The download size is around 2 GB, so the time required will depend on your internet speed.
 
-This should pop up the browser with a Jupyter Lab environment and the libraries required for this subject already setup
+## Running the Environment
+To start the Docker environment, navigate to the cloned folder and run:
+```bash
+    docker run -p 8888:8888 -v ${PWD}/.:/home/jovyan/work ennanco/machinelearning1
 
+```
+This command will open a Jupyter Lab environment in your browser, pre-configured with all necessary libraries for the subject.
 
 
