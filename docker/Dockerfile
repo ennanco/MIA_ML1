@@ -18,6 +18,10 @@ RUN julia -e "using Pkg; Pkg.add.([ \
 	\"DelimitedFiles\", \
 	\"CSV\", \
 	\"Flux\", \
+	\"MLJ\", \
+    \"LIBSVM\", \
+    \"NearestNeighborModels\", \
+    \"DecisionTree\", \
 	\"ScikitLearn\", \
 	\"Plots\", \
 	\"MAT\", \
@@ -26,6 +30,10 @@ RUN julia -e "using Pkg; Pkg.add.([ \
 	\"DataFrames\", \
 	\"Statistics\", \
 	\"StatsPlots\", \
+	\"MultivariateStats\", \
+	\"NaiveBayes\", \
+	\"MLJLinearModels\", \
+	\"TSne\", \
 ]); Pkg.update;"
 
 # Pre compile
@@ -34,6 +42,10 @@ RUN julia -e "using IJulia,\
                     XLSX,\
                     DelimitedFiles,\
                     Flux,\
+                    MLJ, \
+                    LIBSVM, \
+                    NearestNeighborModels, \
+                    DecisionTree, \
                     ScikitLearn,\
                     Plots,\
                     MAT,\
@@ -41,7 +53,11 @@ RUN julia -e "using IJulia,\
                     Images,\
                     DataFrames,\
                     Statistics,\
-                    StatsPlots\
+                    StatsPlots,\
+                    MultivariateStats,\
+                    NaiveBayes,\
+                    MLJLinearModels,\
+                    TSne\
                     ;"
 
 USER $NB_UID

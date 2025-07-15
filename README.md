@@ -9,7 +9,7 @@ This repository hosts the initial exercises for the subject **Machine Learning I
 
 The notebooks in this repository are based on the initial work of Daniel Rivero Cebrián, a former instructor of the subject, who generously provided materials to support the current development.
 
-The practical sessions will be conducted using [Julia](https://julialang.org/), a widely used language in machine learning research. These exercises have been tested on Julia version 1.7.2, though they should also be compatible with versions starting from 1.2.0.
+The practical sessions will be conducted using [Julia](https://julialang.org/), a widely used language in machine learning research. These exercises have been tested on Julia version 1.11.6, though they should also be compatible with versions starting from 1.2.0.
 
 
 # Teaching Staff:
@@ -27,22 +27,30 @@ A Docker image has been prepared with all necessary libraries and configurations
 
 | Julia Library      | Version |
 |--------------------|:-------:|
-| CSV                | 0.10.11 |
-| DataFrames         | 1.6.1   |
+| CSV                | 0.10.15 |
+| DataFrames         | 1.7.0   |
+| DecisionTree       | 0.12.4  |
 | DelimitedFiles     | 1.9.1   |
-| FileIO             | 1.16.1  |
-| Flux               | 0.14.5  |
-| IJulia             | 1.24.2  |
-| Images             | 0.26.0  |
-| JLD2               | 0.4.33  |
-| MAT                | 0.10.5  |
-| Plots              | 1.39.0  |
+| FileIO             | 1.17.0  |
+| Flux               | 0.16.4  |
+| IJulia             | 1.29.0  |
+| Images             | 0.26.2  |
+| JLD2               | 0.5.15  |
+| LIBSV              | 0.8.1   |
+| MAT                | 0.10.7  |
+| MLJ                | 0.20.9  |
+| MLJLinearModels    | 0.10.1  |
+| MultivariateStats  | 0.10.3  |
+| NaiveBayes         | 0.5.6   |
+| NearestNeighborModels| 0.2.3  |
+| Plots              | 1.40.17|
 | Pluto              | 0.19.27 |
 | ScikitLearn        | 0.7.0   |
-| StatsPlots         | 0.15.6  |
-| Tables             | 1.10.1  |
-| XLSX               | 0.10.0  |
-| Statistics         | 1.9.0   |
+| Statistics         | 1.11.1  |
+| StatsPlots         | 0.15.7  |
+| TSne               | 1.3.0   |
+| Tables             | 1.12.1  |
+| XLSX               | 0.10.4  |
 
 - **Python** = 3.11.2
 
