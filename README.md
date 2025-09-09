@@ -74,7 +74,7 @@ There are two ways to set up the Docker environment:
 If you have cloned the repository, build the Docker image using the following command:
 
 ```bash
-docker built -t ennanco/machinelearning1 docker/
+docker build -t ennanco/machinelearning1 docker/
 
 ```
 
