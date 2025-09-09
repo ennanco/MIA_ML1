@@ -59,5 +59,6 @@ RUN julia -e "using IJulia,\
                     MLJLinearModels,\
                     TSne\
                     ;"
+RUN chown -R $NB_UID:$NB_GID /home/jovyan
 
 USER $NB_UID
