@@ -60,4 +60,6 @@ RUN julia -e "using IJulia,\
                     TSne\
                     ;"
 
+RUN chown -R $NB_UID:$NB_GID /home/jovyan
+
 USER $NB_UID
