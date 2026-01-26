@@ -1,7 +1,6 @@
-![License](https://img.shields.io/github/license/ennanco/MIA_ML1?style=flat-square) i
+![License](https://img.shields.io/github/license/ennanco/MIA_ML1?style=flat-square) 
 ![Julia](https://img.shields.io/badge/Julia-1.7.2-blueviolet?logo=Julia)
 ![Env](https://img.shields.io/badge/env-uv-orange?style=flat-square)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7.2-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-teaching--material-informational?style=flat-square)
 
 
