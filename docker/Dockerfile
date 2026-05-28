@@ -17,12 +17,21 @@ RUN julia -e "using Pkg; Pkg.add.([ \
 	\"JLD2\", \
 	\"DelimitedFiles\", \
 	\"CSV\", \
+	\"CategoricalArrays\", \
 	\"Flux\", \
 	\"MLJ\", \
+    \"MLJBase\", \
+    \"MLJModelInterface\", \
+    \"MLJDecisionTreeInterface\", \
+    \"MLJLIBSVMInterface\", \
+    \"MLJNaiveBayesInterface\", \
+    \"MLJEnsembles\", \
     \"LIBSVM\", \
     \"NearestNeighborModels\", \
     \"DecisionTree\", \
+	\"EvoTrees\", \
 	\"ScikitLearn\", \
+	\"ScikitLearnBase\", \
 	\"Plots\", \
 	\"MAT\", \
 	\"Tables\", \
@@ -33,20 +42,31 @@ RUN julia -e "using Pkg; Pkg.add.([ \
 	\"MultivariateStats\", \
 	\"NaiveBayes\", \
 	\"MLJLinearModels\", \
+	\"UrlDownload\", \
+	\"XGBoost\", \
 	\"TSne\", \
-]); Pkg.update;"
+]); Pkg.precompile();"
 
 # Pre compile
 RUN julia -e "using IJulia,\
                     FileIO,\
                     XLSX,\
                     DelimitedFiles,\
+                    CategoricalArrays,\
                     Flux,\
                     MLJ, \
+                    MLJBase, \
+                    MLJModelInterface, \
+                    MLJDecisionTreeInterface, \
+                    MLJLIBSVMInterface, \
+                    MLJNaiveBayesInterface, \
+                    MLJEnsembles, \
                     LIBSVM, \
                     NearestNeighborModels, \
                     DecisionTree, \
+                    EvoTrees, \
                     ScikitLearn,\
+                    ScikitLearnBase,\
                     Plots,\
                     MAT,\
                     Tables,\
@@ -57,6 +77,8 @@ RUN julia -e "using IJulia,\
                     MultivariateStats,\
                     NaiveBayes,\
                     MLJLinearModels,\
+                    UrlDownload,\
+                    XGBoost,\
                     TSne\
                     ;"
 
