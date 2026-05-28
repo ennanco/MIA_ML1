@@ -1,25 +1,24 @@
 FROM jupyter/julia-notebook
 LABEL author="Enrique Fernández Blanco"
 
-
 USER root
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update &&\
-    apt-get install -y htop &&\
-    pip install matplotlib plotly rich seaborn
+RUN apt-get update && \
+    apt-get install -y htop && \
+    pip install --no-cache-dir matplotlib plotly rich seaborn
 
 # ========== Install Julia packages as application user ==========
 
 RUN julia -e "using Pkg; Pkg.add.([ \
-	\"IJulia\", \
-	\"FileIO\", \
-	\"XLSX\", \
-	\"JLD2\", \
-	\"DelimitedFiles\", \
-	\"CSV\", \
-	\"CategoricalArrays\", \
-	\"Flux\", \
-	\"MLJ\", \
+    \"IJulia\", \
+    \"FileIO\", \
+    \"XLSX\", \
+    \"JLD2\", \
+    \"DelimitedFiles\", \
+    \"CSV\", \
+    \"CategoricalArrays\", \
+    \"Flux\", \
+    \"MLJ\", \
     \"MLJBase\", \
     \"MLJModelInterface\", \
     \"MLJDecisionTreeInterface\", \
@@ -29,22 +28,22 @@ RUN julia -e "using Pkg; Pkg.add.([ \
     \"LIBSVM\", \
     \"NearestNeighborModels\", \
     \"DecisionTree\", \
-	\"EvoTrees\", \
-	\"ScikitLearn\", \
-	\"ScikitLearnBase\", \
-	\"Plots\", \
-	\"MAT\", \
-	\"Tables\", \
-	\"Images\", \
-	\"DataFrames\", \
-	\"Statistics\", \
-	\"StatsPlots\", \
-	\"MultivariateStats\", \
-	\"NaiveBayes\", \
-	\"MLJLinearModels\", \
-	\"UrlDownload\", \
-	\"XGBoost\", \
-	\"TSne\", \
+    \"EvoTrees\", \
+    \"ScikitLearn\", \
+    \"ScikitLearnBase\", \
+    \"Plots\", \
+    \"MAT\", \
+    \"Tables\", \
+    \"Images\", \
+    \"DataFrames\", \
+    \"Statistics\", \
+    \"StatsPlots\", \
+    \"MultivariateStats\", \
+    \"NaiveBayes\", \
+    \"MLJLinearModels\", \
+    \"UrlDownload\", \
+    \"XGBoost\", \
+    \"TSne\", \
 ]); Pkg.precompile();"
 
 # Pre compile
