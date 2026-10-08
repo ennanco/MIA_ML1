@@ -1,0 +1,31 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Education & Research",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Can you explain how broadcasting works in Julia",
+      "Why is my code giving an error in this function?",
+      "I 'm stuck with the exercise 2.1  in notebook 2 "
+    ],
+    "developerName": "Enrique Fernández Blanco",
+    "displayName": "ML1 MIA - Practical Teacher",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "An educational assistant for Machine Learning I students working with the public MIA_ML1 Julia notebooks. It explains concepts, offers hints and gives constructive feedback on student code. It is instructed to respond in English and avoid providing complete solutions to course exercises. Notebook retrieval depends on the tools available in the user’s ChatGPT session; students can provide the relevant text or notebook if retrieval is unavailable. Responses may contain errors and should be checked against course materials.",
+    "shortDescription": "Julia ML hints and feedback",
+    "websiteURL": "https://ennanco.github.io/MIA_ML1/",
+    "supportURL": "https://ennanco.github.io/MIA_ML1/#support",
+    "privacyPolicyURL": "https://ennanco.github.io/MIA_ML1/#privacy",
+    "termsOfServiceURL": "https://ennanco.github.io/MIA_ML1/#terms"
+  },
+  "name": "gpt-44e1ce06a3cfbadcd54640b294f80a38",
+  "version": "0.6.3",
+  "description": "Guides Julia ML students with hints and feedback—never gives direct answers.",
+  "author": {
+    "name": "Enrique Fernández Blanco"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

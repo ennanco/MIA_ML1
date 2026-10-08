@@ -1,0 +1,5 @@
+interface:
+  default_prompt: Can you explain how broadcasting works in Julia
+  display_name: ML1 MIA - Practical Teacher
+  short_description: Guides Julia ML students with hints and feedback—never gives
+    dir
