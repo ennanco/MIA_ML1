@@ -43,6 +43,7 @@ RUN julia -e "using Pkg; Pkg.add.([ \
     \"MLJLinearModels\", \
     \"UrlDownload\", \
     \"XGBoost\", \
+    \"MLJXGBoostInterface\", \
     \"TSne\", \
 ]); Pkg.precompile();"
 
@@ -78,6 +79,7 @@ RUN julia -e "using IJulia,\
                     MLJLinearModels,\
                     UrlDownload,\
                     XGBoost,\
+                    MLJXGBoostInterface,\
                     TSne\
                     ;"
 
