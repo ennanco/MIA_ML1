@@ -39,6 +39,7 @@ RUN julia -e "using Pkg; Pkg.add.([ \
     \"Statistics\", \
     \"StatsPlots\", \
     \"MultivariateStats\", \
+    \"MLJMultivariateStatsInterface\", \
     \"NaiveBayes\", \
     \"MLJLinearModels\", \
     \"UrlDownload\", \
@@ -75,6 +76,7 @@ RUN julia -e "using IJulia,\
                     Statistics,\
                     StatsPlots,\
                     MultivariateStats,\
+                    MLJMultivariateStatsInterface,\
                     NaiveBayes,\
                     MLJLinearModels,\
                     UrlDownload,\

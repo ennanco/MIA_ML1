@@ -2,7 +2,7 @@
 
 julia_version = "1.13.2"
 manifest_format = "2.1"
-project_hash = "8e3975e02d11a0abd9c22fdd69ff8b30543d6cb8"
+project_hash = "30d4aecb8ef31e5b66a99ed60f6ce61ee6b79bd7"
 
 [[deps.ADTypes]]
 deps = ["PrecompileTools"]
@@ -1963,6 +1963,13 @@ git-tree-sha1 = "fe8ed28e3a52b453a94e317465be591f4fda5622"
 registries = "General"
 uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
 version = "0.18.10"
+
+[[deps.MLJMultivariateStatsInterface]]
+deps = ["CategoricalDistributions", "Distances", "LinearAlgebra", "MLJModelInterface", "MultivariateStats", "StatsBase"]
+git-tree-sha1 = "4a0b6e80590b3c6a95d71d5b8e32cca13ad02c5a"
+registries = "General"
+uuid = "1b6a4a23-ba22-4f51-9698-8599985d3728"
+version = "0.5.4"
 
 [[deps.MLJNaiveBayesInterface]]
 deps = ["CategoricalArrays", "DataAPI", "LogExpFunctions", "MLJModelInterface", "NaiveBayes"]
